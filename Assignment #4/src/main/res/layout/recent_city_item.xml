@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_cities"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Create a TextView for each of the data derived from the ForecastCity class -->
+        <TextView
+            android:id="@+id/tv_default_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"
+            android:textColor="#ff3824"
+            android:text="@string/default_city_label" />
+
+        <TextView
+            android:id="@+id/tv_city_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingBottom="10dp"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_below="@+id/tv_default_city"
+            android:text="Corvallis" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
