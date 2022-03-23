@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_weather"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Create a TextView for each of the data derived from the WeatherData class -->
+        <TextView
+            android:id="@+id/tv_weather_month"
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:paddingTop="25dp"
+            android:textColor="#8e8e93" />
+
+        <TextView
+            android:id="@+id/tv_weather_day"
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            android:paddingTop="40dp"
+            android:textAlignment="center"
+            android:textColor="#555555"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/tv_low_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_below="@+id/tv_precip"
+            android:textSize="22sp"
+            android:textColor="#355fe5" />
+
+        <TextView
+            android:id="@+id/tv_high_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="175dp"
+            android:layout_below="@id/tv_precip"
+            android:textSize="22sp"
+            android:textColor="#f37b2f" />
+
+        <TextView
+            android:id="@+id/tv_precip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_short_desc"
+            android:layout_marginStart="110dp"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:textColor="#949494" />
+
+        <TextView
+            android:id="@+id/tv_short_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="13dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#202020" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
