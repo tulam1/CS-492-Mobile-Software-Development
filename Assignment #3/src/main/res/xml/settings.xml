@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="@string/pref_category">
+
+        <ListPreference
+            android:title="@string/pref_units_title"
+            android:key="@string/pref_units_key"
+            android:entries="@array/pref_units_entries"
+            android:entryValues="@array/pref_units_values"
+            android:defaultValue="@string/pref_units_default"
+            android:dialogTitle="@string/pref_units_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:title="@string/pref_city_title"
+            android:key="@string/pref_city_key"
+            android:defaultValue="@string/pref_city_default"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

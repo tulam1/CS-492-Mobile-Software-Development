@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">CS 492 Weather</string>
+
+    <string name="api_error">Unable to fetch API data from source. Please check to make sure that you have Internet Connection.</string>
+    <string name="action_maps">View Map</string>
+    <string name="action_settings">Settings</string>
+    <string name="map_error">Error! Something went wrong, unable to pull up Map. Please Try Again</string>
+
+    <string name="pref_category">Forecast Settings</string>
+
+    <string name="pref_units_title">Units of Measurement</string>
+    <string name="pref_units_key" translatable="false">units</string>
+
+    <string name="units_entry_standard">Standard System (°K)</string>
+    <string name="units_entry_imperial">Imperial System (°F)</string>
+    <string name="units_entry_metric">Metric System (°C)</string>
+
+    <string name="units_value_standard" translatable="false">standard</string>
+    <string name="units_value_imperial" translatable="false">imperial</string>
+    <string name="units_value_metric" translatable="false">metric</string>
+
+    <string name="pref_city_default">Corvallis</string>
+    <string name="pref_units_default">@string/units_value_standard</string>
+
+    <string name="pref_city_title">Search for Location</string>
+    <string name="pref_city_key" translatable="false">q</string>
+</resources>

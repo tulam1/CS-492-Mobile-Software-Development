@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ForecastDetailActivity">
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:textAppearance="?attr/textAppearanceHeadline3"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#343434" />
+
+    <TextView
+        android:id="@+id/tv_detail_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_detail_precip"
+        android:textAppearance="?attr/textAppearanceHeadline4"
+        android:textAlignment="center"
+        android:paddingTop="30dp"
+        android:textColor="#778cd5" />
+
+    <TextView
+        android:id="@+id/tv_detail_precip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_city"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tv_detail_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_detail_desc"
+        android:paddingStart="120dp"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:textColor="#5856d6" />
+
+    <TextView
+        android:id="@+id/tv_detail_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_detail_desc"
+        android:paddingStart="195dp"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:textColor="#5856d6" />
+
+    <TextView
+        android:id="@+id/tv_detail_low"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_detail_date"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="70dp"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        android:textColor="#355fe5" />
+
+    <TextView
+        android:id="@+id/tv_detail_high"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_detail_date"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="218dp"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        android:textColor="#f37b2f" />
+
+</RelativeLayout>
